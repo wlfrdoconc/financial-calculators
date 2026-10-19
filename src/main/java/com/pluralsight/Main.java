@@ -10,6 +10,7 @@ public class Main {
         System.out.println("==== FINANCIAL CALCULATOR ====");
         System.out.println("1. Mortgage Calculator");
         System.out.println("2. CD Calculator");
+        System.out.println("3. Annuity Calculator");
 
         System.out.print("Select a calculator: ");
         int calculatorChoice = read.nextInt();
@@ -22,7 +23,8 @@ public class Main {
             case 2:
                 CDCalculator.main(args);
                 break;
-
+            case 3:
+                AnnuityCalculator.main(args);
             default:
                 System.out.println("Invalid selection");
         }

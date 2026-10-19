@@ -11,16 +11,16 @@ public class Main {
         System.out.println("1. Mortgage Calculator");
         System.out.println("2. CD Calculator");
 
-        System.out.println("Select a calculator: ");
+        System.out.print("Select a calculator: ");
         int calculatorChoice = read.nextInt();
 
         switch (calculatorChoice) {
             case 1:
-                MortgageCalculator.main(new String[0]);
+                MortgageCalculator.main(args); // Reuses existing array from MortgageCalculator
                 break;
 
             case 2:
-                CDCalculator.main(new String[0]);
+                CDCalculator.main(args);
                 break;
 
             default:
